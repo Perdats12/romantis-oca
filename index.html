@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Untuk Cintaku 💖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Untuk Kamu yang Paling Spesial 💕</h1>
+    <p>Aku buat ini untuk mengabadikan cinta kita</p>
+  </header>
+
+  <section class="typewriter">
+    <p id="typing-text"></p>
+  </section>
+  
+  <section class="photo-gallery">
+    <h2>Kenangan Indah Kita 📸</h2>
+    <div class="photos">
+      <!-- 14 foto -->
+      <img src="images/photo1.jpg" alt="Foto 1">
+      <img src="images/photo2.jpg" alt="Foto 2">
+      <img src="images/photo3.jpg" alt="Foto 3">
+      <img src="images/photo4.jpg" alt="Foto 4">
+      <img src="images/photo5.jpg" alt="Foto 5">
+      <img src="images/photo6.jpg" alt="Foto 6">
+      <img src="images/photo7.jpg" alt="Foto 7">
+      <img src="images/photo8.jpg" alt="Foto 8">
+      <img src="images/photo9.jpg" alt="Foto 9">
+      <img src="images/photo10.jpg" alt="Foto 10">
+      <img src="images/photo11.jpg" alt="Foto 11">
+      <img src="images/photo12.jpg" alt="Foto 12">
+      <img src="images/photo13.jpg" alt="Foto 13">
+      <img src="images/photo14.jpg" alt="Foto 14">
+    </div>
+  </section>
+
+  <section class="video-gallery">
+    <h2>Video Cinta Kita 🎥</h2>
+    <div class="videos">
+      <!-- 3 video -->
+      <video controls src="videos/video1.mp4"></video>
+      <video controls src="videos/video2.mp4"></video>
+      <video controls src="videos/video3.mp4"></video>
+    </div>
+  </section>
+
+  <section class="love-letter">
+    <h2>Surat Cinta Untuk Sengku, Oca 💌</h2>
+    <div class="letter">
+      <p>Hai Sengku sayang, Oca 🥰</p>
+      <p>
+        Nggak ada hari yang lebih indah selain hari-hari bareng kamu. Kamu tuh kayak sinar mentari setelah hujan — hangat, lembut, dan bikin hati adem.
+      </p>
+      <p>
+        Oca sayang, makasih ya udah hadir di hidup aku, nemenin aku dalam suka dan duka. Cinta kamu bikin aku ngerasa jadi versi terbaik dari diriku.
+        Aku nggak butuh kata-kata indah dari puisi manapun, karena senyummu itu udah lebih dari segalanya.
+      </p>
+      <p>
+        Aku cuma mau kamu tahu, setiap malam sebelum tidur, namamu yang terakhir aku pikirin. Dan tiap pagi, senyummu yang paling aku harapin.
+      </p>
+      <p>
+        Aku sayang banget sama kamu, Seng. Dan selama kamu mau, aku akan terus ada buat kamu. Selalu.
+      </p>
+      <p>
+        Dengan sepenuh cinta,<br>
+        <em>Ojan yang selalu jadi milikmu</em> 💖
+      </p>
+    </div>
+  </section>
+
+  <section class="affirmations">
+    <h2>Untuk Kamu, Seng</h2>
+    <ul>
+      <li>Aku selalu ada buat kamu</li>
+      <li>Cinta ini nggak akan pernah habis</li>
+      <li>Kamu layak dicintai setiap hari</li>
+      <li>Pelukku selalu untuk kamu</li>
+      <li>Kamu segalanya buat aku</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Untuk kamu, dari aku yang selalu sayang 💌</p>
+  </footer>
+
+  <script>
+    const text = "Oca, kamu itu anugerah terindah dalam hidup aku. ❤️";
+    const typingText = document.getElementById("typing-text");
+    let i = 0;
+
+    function typeWriter() {
+      if (i < text.length) {
+        typingText.innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, 50);
+      }
+    }
+
+    window.onload = typeWriter;
+  </script>
+</body>
+</html>
